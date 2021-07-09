@@ -1,0 +1,48 @@
+.size-medium{
+width:100%;
+}
+.TextGreen {
+border-left:5px solid green;
+font-weight:800;
+padding-left: 4px;
+font-size:18px;
+}
+.TextSub { 
+border-bottom:2px solid rgba(0,0,0,0.1);				font
+weight:800;				
+font-size:12px;				
+}
+.box-copyright{
+padding:5px 9px;
+border: 2px double gray;
+color:black;
+font-family: Bebas Neue;
+}
+.box-copyright a{
+color: green;
+font-weight:600;
+}
+	.masonry-container {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;    
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
+  margin-bottom:10px;
+}
+
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+}
+
+.masonry-item img {
+  display:block;
+  width: 100%;
+}
+.masonry-item {
+  margin-bottom: 15px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+}
