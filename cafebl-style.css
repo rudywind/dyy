@@ -4,7 +4,13 @@
 .sesih2 a{color:#1f1f1f;text-decoration:none}
 h2.sesih2{font-size:14px}    
 .loading-ads{position:relative;overflow:hidden;background:#eee;opacity:.9;margin:0px auto}
-.loading-ads::before{content:"";background:url("https://1.bp.blogspot.com/-MFlE4X6XoBQ/YOS0qYFJwWI/AAAAAAAACz4/1taI9c5jCRsTPx6Nc-ovMRKyZQPKyRksQCLcBGAsYHQ/s20/ad-icon.png");background-size:20px 20px;background-repeat:no-repeat;width:20px;height:20px;position:absolute;top:50%;left:50%;transform :translate(-50%,-50%);z-index:-1}
+.loading-ads::before{
+content:"";
+background:url("https://blogger.googleusercontent.com/img/a/AVvXsEi5Bw4ak6bBKdEJVt3X6rQwb8OSWXupTVdYdPcoNHfvVuBGJJsoITig-WMysDqc-XFATsshe5v1QNn3RSw2rgKJiZtp09H-EVKOsFSantW3sGuH-kM9QqWKad-07z3dC_zRGucLuv8zDusokMls4uJw11AWtYECU0dc1T-BYtleVAoOUfg5zXJX4_i2");
+background-size:50px 60px;
+background-repeat:no-repeat;
+width:60px;
+height:60px;position:absolute;top:50%;left:50%;transform :translate(-50%,-50%);z-index:-1}
 .loading-ads::after{content:"";background:url("https://1.bp.blogspot.com/-626585Fw-zw/YOS0qQIE4hI/AAAAAAAACz0/CWcptj0cXCUy2jqNFG1j2Ld7U0M6qJkDACLcBGAsYHQ/s1000/ad-loading.gif");background-size:100% 2px;background-repeat:no-repeat;height:2px;width:100%;position:absolute;left:0px;top:0px;z-index:-1}
 .firtstext{
 	font-size: 40px;
