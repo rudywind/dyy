@@ -49,3 +49,32 @@ height:60px;position:absolute;top:50%;left:50%;transform :translate(-50%,-50%);z
 .TextCoklat { border-left:5px solid #793611;				font-weight:800;				padding-left: 4px;				font-size:18px;				}
 .box{font-family: Verdana, sans-serif; font-size: 16px				}.box-body{border: 4px double rgb(171, 171, 171); padding: 1px; position: relative;}.box-img{border-style: none; float: left; margin-right: 10px; padding: 1px;width:50.5;height:71;border-radius:5px}
 .box-name{font-weight: 700;font-size:18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}.box .clear-box{clear: both; font-size: 1px; height: 1px; line-height: 1px; overflow: hidden;}
+.pinterest-container {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+    
+  -webkit-column-gap: 15px;
+  -moz-column-gapw 15px;
+  column-gap: 15px;
+}
+.pinterest-item {
+  display: inline-block;
+  width: 100%;
+}
+.pinterest-item img {
+  display:block;
+  width: 100%;
+}
+
+/* Just for decoration: */
+.pinterest-item span {
+  font-family: sans-serif;
+  display:block;
+  padding:10px;
+}
+.pinterest-item {
+  margin-bottom: 15px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+}
