@@ -1,3 +1,4 @@
+
 /*
    DHTML Snowstorm! OO-style Jascript-based Snow effect
    ----------------------------------------------------
@@ -17,14 +18,14 @@ function SnowStorm() {
 
   // --- PROPERTIES ---
 
-  this.flakesMax = 128;           // Limit total amount of snow made (falling + sticking)
-  this.flakesMaxActive = 64;      // Limit amount of snow falling at once (less = lower CPU use)
+  this.flakesMax = 300;           // Limit total amount of snow made (falling + sticking)
+  this.flakesMaxActive = 6400;      // Limit amount of snow falling at once (less = lower CPU use)
   this.animationInterval = 33;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
   this.flakeBottom = null;        // Integer for Y axis snow limit, 0 or null for "full-screen" snow effect
   this.targetElement = null;      // element which snow will be appended to (document body if null/undefined) - can be an element ID string, or a DOM node reference
-  this.followMouse = true;        // Snow will change movement with the user's mouse
-  this.snowColor = '#fff';        // Don't eat (or use?) yellow snow.
-  this.snowCharacter = '&bull;';  // &bull; = bullet, &middot; is square on some systems etc.
+  this.followMouse = false;        // Snow will change movement with the user's mouse
+  this.snowColor = '#FFFAFA';        // Don't eat (or use?) yellow snow.
+  this.snowCharacter = '&#10052;';  // &bull; = bullet, &middot; is square on some systems etc.
   this.snowStick = true;          // Whether or not snow should "stick" at the bottom. When off, will never collect.
   this.useMeltEffect = true;      // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
   this.useTwinkleEffect = false;  // Allow snow to randomly "flicker" in and out of view while falling
