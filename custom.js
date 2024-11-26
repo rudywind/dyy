@@ -1,170 +1,90 @@
-$(document).ready(function () {
-    'use strict';
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
 
-    /*-----------------------------------------------------
-    Navbar Toggle for Mobile
-    ------------------------------------------------------*/
-    function navbarCollapse() {
-        if ($(window).width() < 992) {
-            $(document).on('click', function (event) {
-                var clickover = $(event.target);
-                var _opened = $("#main-nav-collapse").hasClass("in");
-                if (_opened === true && !(clickover.is('.dropdown, #main-nav-collapse input, #main-nav-collapse button, #main-nav-collapse .fa, #main-nav-collapse select'))) {
-                    // $("button.navbar-toggle").trigger('click');
-                }
-            });
-
-            $('.dropdown').unbind('click');
-            $('.dropdown').on('click', function () {
-                $(this).children('.dropdown-menu').slideToggle();
-            });
-        }
-    }
-    navbarCollapse();
-
-    /*-----------------------------------------
-    Mobile Dropdown Toggle
-    -----------------------------------------*/
-    function dropdownToggle() {
-        if ($(window).width() < 992) {
-            $('.navbar-toggle').css('display', 'block');
-            $('.navbar-collapse').css('display', 'none');
-
-            $('.dropdown').unbind('click');
-
-            $('.dropdown').on('click', function (dd) {
-                dd.stopPropagation();
-                $(this).children('.dropdown-menu').slideToggle();
-            });
-        } else {
-            $('.navbar-toggle').css('display', 'none');
-            $('.navbar-collapse').css('display', 'block');
-        }
-    }
-
-    dropdownToggle();
-
-    /*-----------------------------------------
-    Header Slider 
-    -----------------------------------------*/
-    $('#vfx_banner_slider').owlCarousel({
-        singleItem: true,
-        slideSpeed: 200,
-        autoPlay: 3000,
-        stopOnHover: true,
-        navigation: false,
-        pagination: true,
-        paginationNumbers: true,
-    });
-
-	/*-----------------------------------------
-    TV Show Carousel 
-    -----------------------------------------*/
-    $('.tv-show-carousel').owlCarousel({
-        items: 4,
-        itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [991, 3],
-        itemsTablet: [767, 2],
-        itemsMobile: [479, 1],
-        slideSpeed: 200,
-        navigation: true,
-        navigationText: ['<i class=\"fa fa-angle-left\"></i>', '<i class=\"fa fa-angle-right\"></i>'],
-        pagination: false,
-    });
-
-    /*-----------------------------------------
-    Video Carousel 
-    -----------------------------------------*/
-    $('.video-carousel').owlCarousel({
-        items: 6,
-        itemsDesktop: [1199, 5],
-        itemsDesktopSmall: [991, 4],
-        itemsTablet: [767, 3],
-        itemsMobile: [479, 2],
-        slideSpeed: 200,
-        navigation: true,
-        navigationText: ['<i class=\"fa fa-angle-left\"></i>', '<i class=\"fa fa-angle-right\"></i>'],
-        pagination: false,
-    });	
-
-	/*-----------------------------------------
-    Sports Video Carousel 
-    -----------------------------------------*/
-    $('.sports-video-carousel').owlCarousel({
-        items: 4,
-        itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [991, 3],
-        itemsTablet: [767, 2],
-        itemsMobile: [479, 1],
-        slideSpeed: 200,
-        navigation: true,
-        navigationText: ['<i class=\"fa fa-angle-left\"></i>', '<i class=\"fa fa-angle-right\"></i>'],
-        pagination: false,
-    });	
-
-	/*-----------------------------------------
-    Seasons Video Carousel 
-    -----------------------------------------*/
-    $('.seasons-video-carousel').owlCarousel({
-        items: 4,
-        itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [991, 3],
-        itemsTablet: [767, 2],
-        itemsMobile: [479, 1],
-        slideSpeed: 200,
-        navigation: true,
-        navigationText: ['<i class=\"fa fa-angle-left\"></i>', '<i class=\"fa fa-angle-right\"></i>'],
-        pagination: false,
-    });		
-	
-	/*-----------------------------------------
-		News Carousel 
-    -----------------------------------------*/
-    $('.news-carousel').owlCarousel({
-        items: 3,
-        itemsDesktop: [1199, 2],
-        itemsDesktopSmall: [991, 2],
-        itemsTablet: [767, 1],
-        itemsMobile: [479, 1],
-        slideSpeed: 200,
-        navigation: true,
-        navigationText: ['<i class=\"fa fa-angle-left\"></i>', '<i class=\"fa fa-angle-right\"></i>'],
-        pagination: false,
-    });
-	
-    /*-----------------------------------------
-    Single Gallery Slider
-    -----------------------------------------*/
-    $('.single-gallery-slider').owlCarousel({
-        singleItem: true,
-        slideSpeed: 200,
-        autoPlay: 3000,
-        stopOnHover: true,
-        navigation: true,
-        navigationText: ['<i class=\"fa fa-angle-left\"></i>', '<i class=\"fa fa-angle-right\"></i>'],
-        pagination: false,
-    });
- 
+function GetClock(elm){
+    var tzOffset = +7,
+        d  = new Date(),
+        dx = d.toGMTString(),
+        dx = dx.substr(0,dx.length -3);
     
-    // Function for email address validation
-    function isValidEmail(emailAddress) {
-        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    d.setTime(Date.parse(dx))
+    d.setHours(d.getHours()+tzOffset);
 
-        return pattern.test(emailAddress);
+    var nday   = d.getDay(),
+        nmonth = d.getMonth(),
+        ndate  = d.getDate(),
+        nyear  = d.getYear(),
+        nhour  = d.getHours(),
+        nmin   = d.getMinutes(),
+        nsec   = d.getSeconds(), ap;
+    if (nhour == 0){ ap = " AM"; nhour = 12; }
+    else if (nhour< 12){ ap = " AM"; }
+    else if (nhour == 12){ ap = " PM"; }
+    else if (nhour > 12){ ap = " PM"; nhour -= 12; }
 
-    }
-    /*-----------------------------------------
-    All Window Event
-    -----------------------------------------*/
-    $(window).on('resize orientationchange', function () {
-        dropdownToggle();
-        navbarCollapse();
+    if (nyear < 1000) nyear+=1900;
+    if (nmin <= 9) nmin="0"+nmin;
+    if (nsec <= 9) nsec="0"+nsec;
+
+    document.getElementById(elm).innerHTML = nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+function load_history(days) {
+    $('#main-wrapper').html($('#loader').children().clone());
+    $.ajax({
+        type     : 'POST',
+        url      : $('#website_url').val() + '/wp-admin/admin-ajax.php',
+        data     : { 'action' : 'pools_history', 'days' : days },
+        // dataType : 'json',
+        success  : function(pools_history) {
+            $('#main-wrapper').html(pools_history);
+        }
+    });
+}
+
+$(document).ready(function() {
+    $('.nav-link').on('click', function(e) {
+        e.preventDefault();
+        
+        var nLink = $(this).attr('href');
+        var nText = $(this).attr('title');
+
+        if (nLink === '#ajax') {
+            load_history(nText);
+        } else {
+            window.location.href = nLink;
+        }
     });
 });
 
-/*-----------------------------------------
-Preloader
------------------------------------------*/
-$(window).on('load', function () {
-    $('#preloader').delay(200).fadeOut(100);
-});
+}
+/*
+     FILE ARCHIVED ON 10:17:31 Apr 11, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:41:19 Nov 26, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.688
+  exclusion.robots: 0.024
+  exclusion.robots.policy: 0.01
+  esindex: 0.015
+  cdx.remote: 21.533
+  LoadShardBlock: 54.488 (3)
+  PetaboxLoader3.datanode: 86.263 (5)
+  load_resource: 158.403
+  PetaboxLoader3.resolve: 118.538
+  loaddict: 21.88
+*/
