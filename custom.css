@@ -1,0 +1,275 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #F0EFEB;
+}
+
+hr.separator {
+    border-color: #b5b5b8;
+    border-width: 3px;
+    margin: 5px 0;
+}
+
+.bg-dark {
+    background-color: #03071E !important;
+}
+.bg-blue {
+    background-color: #023E8A !important;
+}
+.bg-blue-light {
+    background-color: #E2EAFC !important;
+}
+
+header {
+    background-color: #E2EAFC;
+}
+header img.logo {
+    max-width: 280px;
+}
+header .nav .nav-item .nav-link {
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: #03071E;
+    text-decoration: none !important;
+}
+header .nav .nav-item:last-child .nav-link {
+    margin-right: 0 !important;
+}
+header .nav .nav-item .nav-link img {
+    margin-top: -5px;
+}
+header .running-text {
+    padding: 0px 10px;
+    background-color: #D00000;
+    line-height: 40px;
+    max-height: 40px;
+    height: 40px;
+}
+header .running-text marquee {
+    line-height: 40px;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #03045E;
+}
+nav .nav-item .nav-link {
+    color: #ffffff !important;
+    text-transform: uppercase;
+}
+nav .nav-item.active .nav-link {
+    color: #ffd900 !important;
+    font-weight: bold;
+}
+
+.content .card.card-result .img-icon {
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+}
+.content .card.card-result .card-result-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.content .card.card-result .card-result-title small {
+    position: absolute;
+    font-size: 20px;
+}
+.content .card.card-result .result-box {
+    position: relative;
+    text-align: center;
+    background-color: #023E8A;
+    border-radius: 50px;
+    padding: 10px 10px;
+    max-width: 285px;
+    margin: 0 auto;
+}
+.content .card.card-result .result-box .result-number {
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 0 3px;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, #f5f5f5, #929292);
+}
+.content .card.card-result .result-box .result-number:first-child {
+    margin-left: 0;
+}
+.content .card.card-result .result-box .result-number:last-child {
+    margin-right: 0;
+}
+.content .card.card-result .result-box .result-number .result-digit {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50px;
+    color: #023E8A;
+    font-weight: bold;
+    font-size: 18px;
+}
+.content .card.card-result .result-box .result-number .result-digit:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 15px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #ffffff91;
+}
+.content .card.card-result .result-box.mini {
+    position: relative;
+    text-align: center;
+    background-color: #023E8A;
+    border-radius: 50px;
+    padding: 10px 5px;
+    max-width: 230px;
+    margin: 0 auto;
+}
+.content .card.card-result .result-box.mini .result-number {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 1px;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, #f5f5f5, #929292);
+}
+.content .card.card-result .result-box.mini .result-number .result-digit {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    color: #023E8A;
+    font-weight: bold;
+    font-size: 16px;
+}
+.content .card.card-result .result-box.mini .result-number .result-digit:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 12px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #ffffff91;
+}
+.content .card.card-date-time .nav .nav-item .nav-link {
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: #03071E;
+    text-decoration: none !important;
+}
+.content .card.card-date-time .nav .nav-item:last-child .nav-link {
+    margin-right: 0 !important;
+}
+.content .card.card-date-time .nav .nav-item .nav-link img {
+    margin-top: -5px;
+}
+
+footer {
+    background-color: #03045E;
+}
+
+.flip-clock-wrapper ul {
+    margin: 2px;
+    width: 14px !important;
+    height: 40px;
+    font-size: 28px;
+    background: #D00000;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+    line-height: 40px;
+    padding: 0 14px;
+}
+.flip-clock-wrapper ul li a div div.inn {
+    font-size: 28px;
+    border-radius: 3px;
+    line-height: 40px;
+    background: #D00000;
+    color: #f5f5f5;
+}
+.flip-clock-wrapper ul li a div.up:after {
+    top: 19px;
+}
+.flip-clock-divider {
+    width: 10px;
+    height: 40px;
+}
+.flip-clock-divider .flip-clock-dot {
+    width: 5px;
+    height: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    left: 2.5px;
+    background: #D00000;
+}
+.flip-clock-divider .flip-clock-dot.top {
+    top: 10px;
+}
+.flip-clock-divider .flip-clock-dot.bottom {
+    bottom: 6px;
+}
+.flip-clock-divider .flip-clock-label {
+    display: none !important;
+}
+
+table {
+    white-space: nowrap !important;
+}
+table tbody tr td {
+    vertical-align: middle !important;
+}
+
+.text-blink {
+    color: #ffffff;
+    animation: blink normal 0.8s infinite ease-in-out;
+}
+
+/** Media Query Style **/
+@media (min-width: 993px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    nav .nav-item .nav-link {
+        margin: 0 10px;
+    }
+}
+
+/** Animation **/
+@keyframes blink {
+    0% {
+        color: #D00000;
+    }
+    50% {
+        color: #e5c300;
+    }
+    100% {
+        color: #D00000;
+    }
+}
+/*
+     FILE ARCHIVED ON 10:19:28 Apr 11, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:41:18 Nov 26, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.83
+  exclusion.robots: 0.027
+  exclusion.robots.policy: 0.011
+  esindex: 0.013
+  cdx.remote: 7.027
+  LoadShardBlock: 98.948 (3)
+  PetaboxLoader3.datanode: 101.197 (5)
+  PetaboxLoader3.resolve: 124.007 (2)
+  load_resource: 154.828
+  loaddict: 37.709
+*/
